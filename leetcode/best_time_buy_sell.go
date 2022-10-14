@@ -7,7 +7,8 @@ func maxProfit(prices []int) int {
 	for i := range prices {
 		if prices[i] < min {
 			min = prices[i]
-		} else if prices[i]-min > maxPrice {
+		}
+		if prices[i]-min > maxPrice {
 			maxPrice = prices[i] - min
 		}
 	}
