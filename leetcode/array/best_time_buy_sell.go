@@ -1,3 +1,5 @@
+package array
+
 func maxProfit(prices []int) int {
 	var (
 		min      = prices[0]

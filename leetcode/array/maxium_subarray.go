@@ -1,3 +1,7 @@
+package array
+
+import "math"
+
 func maxSubArray(nums []int) int {
 	var (
 		maxSoFar  = math.MinInt64

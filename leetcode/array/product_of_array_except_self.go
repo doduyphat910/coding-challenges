@@ -1,3 +1,5 @@
+package array
+
 func productExceptSelf(nums []int) []int {
 	var (
 		results                 []int

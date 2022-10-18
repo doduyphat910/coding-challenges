@@ -1,3 +1,5 @@
+package array
+
 func containsDuplicate(nums []int) bool {
 	numByAppear := make(map[int]uint)
 	for i := range nums {

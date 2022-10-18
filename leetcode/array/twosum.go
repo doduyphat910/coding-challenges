@@ -1,3 +1,5 @@
+package array
+
 func twoSum(nums []int, target int) []int {
 	var result []int
 	// for i := range nums {
