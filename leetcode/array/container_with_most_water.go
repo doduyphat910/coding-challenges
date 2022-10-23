@@ -23,11 +23,7 @@ func maxArea(height []int) int {
 	return max
 }
 
-<<<<<<< HEAD
 // another approach (2 pointer)
-=======
-// another approach
->>>>>>> master
 func maxArea(height []int) int {
 	var (
 		i   = 0
