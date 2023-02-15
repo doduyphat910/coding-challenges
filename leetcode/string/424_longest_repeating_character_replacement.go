@@ -9,14 +9,9 @@ func characterReplacement(s string, k int) int {
 	)
 
 	for i := range s {
-		num, ok := numBySMap[string(s[i])]
-		if ok {
-			num += 1
-			numBySMap[string(s[i])] = num
-		} else {
-			num = 1
-			numBySMap[string(s[i])] = 1
-		}
+		num := numBySMap[string(s[i])]
+		num += 1
+		numBySMap[string(s[i])] = num
 
 		if num > max {
 			max = num
