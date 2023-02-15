@@ -44,13 +44,16 @@ func maxProduct(nums []int) int {
 		max        = math.MinInt
 		totalLeft  = 1
 		totalRight = 1
-		maxs       []int
 	)
 	for i := range nums {
 		totalLeft *= nums[i]
 		totalRight *= nums[len(nums)-1-i]
-		maxs = append(maxs, totalLeft)
-		maxs = append(maxs, totalRight)
+		if totalLeft > max {
+			max = totalLeft
+		}
+		if totalRight > max {
+			max = totalRight
+		}
 		if totalLeft == 0 {
 			totalLeft = 1
 		}
@@ -59,10 +62,5 @@ func maxProduct(nums []int) int {
 		}
 	}
 
-	for i := range maxs {
-		if maxs[i] > max {
-			max = maxs[i]
-		}
-	}
 	return max
 }
