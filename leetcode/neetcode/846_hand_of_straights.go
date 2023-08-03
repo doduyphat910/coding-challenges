@@ -2,6 +2,7 @@ package neetcode
 
 import "sort"
 
+// TODO: research better way
 func isNStraightHand(hand []int, groupSize int) bool {
 	if len(hand)%groupSize != 0 {
 		return false
